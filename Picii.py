@@ -10,6 +10,11 @@ def resizeImage(image, newWidth=100):
     newHeight = int(newWidth * ratio) # Set new height based on ratio and new width
     return image.resize((newWidth, newHeight)) # Return new image
     
+
+# Convert to grayscale
+def convertToGrayscale(image):
+    return image.convert('L')
+
 def main():
     # Get an image from user input
     path = input("Enter a valid pathname to an image:\n")
