@@ -15,6 +15,11 @@ def resizeImage(image, newWidth=100):
 def convertToGrayscale(image):
     return image.convert('L')
 
+# Convert pixels to ASCII
+def pixelsToAscii(image):
+    img = image.getdata()
+    return "".join([ASCII_CHARS[pixel//25] for i in img])
+
 def main():
     # Get an image from user input
     path = input("Enter a valid pathname to an image:\n")
