@@ -5,30 +5,30 @@
 }
 
 body {
-    background: black;
+  background: black;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #canvas1 {
-    border: 5px solid white;
+  border: 5px solid white;
 }
 
 .controls {
-    display: flex;
+  display: flex;
 }
 
-.controls>input {
-    width: 70%;
+.controls > input {
+  width: 75%;
 }
 
-.control > label {
-    width: 25%;
-    color: white;
-    font-size: 15px;
+.controls > label {
+  width: 25%;
+  color: white;
+  font-size: 15px;
 }
